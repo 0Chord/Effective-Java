@@ -236,7 +236,12 @@ public class Calzone extends Pizza {
     }
 }
 ~~~
-
+~~~java
+    NyPizza pizza = new NyPizza.Builder(SMALL)
+            .addTopping(SAUSAGE).addTopping(ONION).build();
+    Calzone calzone = new Calzone.Builder()
+            .addTopping(HAM).sauceInside().build();
+~~~
 #### 빌더패턴은 코드가 장황해서 매개변수가 4개 이상은 되어야 값어치를 한다
 
 #### 생성자나 정적 팩터리 방식으로 시작했다가 나중에 매개변수가 많아지면 빌더 패턴으로 전환할 수 있지만, 애초에 빌더 패턴으로 시작하는 편이 나을 때가 많다.
