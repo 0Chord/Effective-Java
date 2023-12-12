@@ -32,3 +32,4 @@ public class PhysicalConstants {
 #### 유틸리티 클래스에 정의된 상수를 클라이언트에서 사용하려면 클래스 이름까지 명시해야 함
 - [x] PhysicalConstants.AVOGADROS_NUMBER
 - [x] 유틸리티 클래스의 상수를 빈번히 사용한다면 정적 임포트(static import)하여 클래스 이름은 생략할 수 있음
+### 인터페이스는 타입을 정의하는 용도로만 사용. 상수 공개용 수단으로 사용하지 말자 
